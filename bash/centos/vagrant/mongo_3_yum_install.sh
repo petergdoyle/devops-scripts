@@ -15,5 +15,5 @@ EOF
   systemctl status mongod
   mongo -version
 else
-  echo -e "\e[7;40;92mmongo already appears to be installed. skipping."
+  echo -e "\e[7;40;92mmongo already appears to be installed. skipping.\e[0m"
 fi

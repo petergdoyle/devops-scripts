@@ -13,5 +13,5 @@ export JMETER_HOME=$JMETER_HOME
 EOF
 
 else
-  echo -e "\e[7;40;92mjmeter already appears to be downloaded. skipping."
+  echo -e "\e[7;40;92mjmeter already appears to be downloaded. skipping.\e[0m"
 fi

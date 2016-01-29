@@ -9,12 +9,12 @@ if [ $? -eq 127 ]; then
   && cd /usr/cutter/default
   && make
   if [ $? -ne 0 ]; then
-    echo -e "\e[7;107;91mcutter - make did not run successfully. skipping."
+    echo -e "\e[7;107;91mcutter - make did not run successfully. skipping.\e[0m"
   else
     alternatives --install "/usr/bin/cutter" "cutter" "/usr/cutter/default/cutter" 99999
   fi
   cd -
   rm -f cutter-1.04.tgz
 else
-  echo -e "\e[7;40;92mcutter already appears to be downloaded. skipping."
+  echo -e "\e[7;40;92mcutter already appears to be downloaded. skipping.\e[0m"
 fi

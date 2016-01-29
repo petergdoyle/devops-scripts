@@ -17,5 +17,5 @@ if [ $? -eq 127 ]; then
   npm install monitor-dashboard -g
 
 else
-  echo -e "\e[7;40;92mnode, npm, npm-libs already appear to be installed. skipping."
+  echo -e "\e[7;40;92mnode, npm, npm-libs already appear to be installed. skipping.\e[0m"
 fi

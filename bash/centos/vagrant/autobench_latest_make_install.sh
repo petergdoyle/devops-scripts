@@ -8,10 +8,10 @@ if [ $? -eq 127 ]; then
   make \
   && make install
   if [ $? -ne 0 ]; then
-    echo -e "\e[7;107;91mautobench - make did not build successfully. skipping."
+    echo -e "\e[7;107;91mautobench - make did not build successfully. skipping.\e[0m"
   else
-    echo -e "\e[7;40;92mautobench - built successfully. skipping."
+    echo -e "\e[7;40;92mautobench - built successfully. skipping.\e[0m"
   fi
 else
-  echo -e "\e[7;40;92mautobench already appears to be downloaded. skipping."
+  echo -e "\e[7;40;92mautobench already appears to be downloaded. skipping.\e[0m"
 fi

@@ -8,5 +8,5 @@ if [ $? -eq 127 ]; then
   #sed -i.bak 's/80 default_server/5000 default_server/' /etc/nginx/nginx.conf
 
 else
-  echo -e "\e[7;40;92mnginx already appears to be installed. skipping."
+  echo -e "\e[7;40;92mnginx already appears to be installed. skipping.\e[0m"
 fi

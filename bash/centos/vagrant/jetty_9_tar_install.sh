@@ -20,5 +20,5 @@ EOF
   chmod -R g+s /usr/jetty/
 
 else
-  echo -e "\e[7;40;92mjetty already appears to be installed. skipping."
+  echo -e "\e[7;40;92mjetty already appears to be installed. skipping.\e[0m"
 fi

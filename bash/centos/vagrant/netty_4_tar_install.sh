@@ -19,5 +19,5 @@ EOF
   chmod -R g+s /usr/netty/
 
 else
-  echo -e "\e[7;40;92mnetty already appears to be downloaded. skipping."
+  echo -e "\e[7;40;92mnetty already appears to be downloaded. skipping.\e[0m"
 fi

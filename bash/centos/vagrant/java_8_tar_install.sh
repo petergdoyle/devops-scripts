@@ -21,5 +21,5 @@ if [ $? -eq 127 ]; then
 EOF
 
 else
-  echo -e "\e[7;40;92mjava already appears to be installed. skipping."
+  echo -e "\e[7;40;92mjava already appears to be installed. skipping.\e[0m"
 fi

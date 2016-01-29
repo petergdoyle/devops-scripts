@@ -14,5 +14,5 @@ phpinfo();
 EOF
 
 else
-  echo -e "\e[7;40;92mhttpd already appears to be installed. skipping."
+  echo -e "\e[7;40;92mhttpd already appears to be installed. skipping.\e[0m"
 fi

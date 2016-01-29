@@ -12,7 +12,7 @@ if [ $? -eq 127 ]; then
   yum -y install make libcurl-devel libevent binutils gcc patch openssl-devel
   make
   if [ $? -ne 0 ]; then
-    echo -e "\e[7;107;91mcurl-loader - make did not run successfully. skipping."
+    echo -e "\e[7;107;91mcurl-loader - make did not run successfully. skipping.\e[0m"
   else
     alternatives --install "/usr/bin/curl-loader" "curl-loader" "/usr/curl-loader/default/curl-loader" 99999
   fi
@@ -20,5 +20,5 @@ if [ $? -eq 127 ]; then
   rm -f curl-loader-0.56.tar
 
 else
-  echo -e "\e[7;40;92mcurl-loader already appears to be downloaded. skipping."
+  echo -e "\e[7;40;92mcurl-loader already appears to be downloaded. skipping.\e[0m"
 fi
